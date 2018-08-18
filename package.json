@@ -1,6 +1,6 @@
 {
   "name": "parameterized-table-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper library for Parameterized testing with Markdown table.",
   "keywords": [
     "Parameterized",
