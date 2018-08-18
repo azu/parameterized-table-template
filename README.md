@@ -1,6 +1,6 @@
-# parameterized-table-template
+# parameterized-table-template [![Build Status](https://travis-ci.org/azu/parameterized-table-template.svg?branch=master)](https://travis-ci.org/azu/parameterized-table-template)
 
-A helper library for Parameterized testing with Markdown-like table.
+This library provide  [Tag functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates) for Parameterized testing with Markdown-like table.
 
 This is inspired by [jest-each](https://github.com/facebook/jest/tree/ebaf93481e68b4a149dedc0684792a51ef1c5ab7/packages/jest-each).
 
