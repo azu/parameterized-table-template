@@ -12,7 +12,7 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
-```ts
+```js
 import * as assert from "assert";
 import { parameterizedTableTag } from "parameterized-table-template";
 
@@ -21,7 +21,7 @@ describe("example", () => {
         // function for testing
         const sum = (x: number, y: number) => x + y;
         // generate tests
-        parameterizedTableTag<{ first: number, second: number, expected: number }>`
+        parameterizedTableTag`
             first | second | expected
             ${1}  | ${2}   | ${3}
             ${2}  | ${1}   | ${3}
@@ -34,6 +34,22 @@ describe("example", () => {
     });
 });
 ```
+
+**Notes**: For TypeScript User
+
+```ts
+// parameterizedTableTag allow to pass generics type
+parameterizedTableTag<{ first: number, second: number, expected: number }>`
+    first | second | expected
+    ${1}  | ${2}   | ${3}
+    ${2}  | ${1}   | ${3}
+    ${2}  | ${2}   | ${4}
+`.forEach(({ first, second, expected }) => {
+    it(`${first} + ${second} = ${expected}`, () => {
+        assert.strictEqual(sum(first, second), expected);
+    });
+});```
+
 
 ## API 
 
@@ -49,7 +65,7 @@ It return array of object that is defined in table.
 - One or more subsequent rows of data supplied as template literal expressions using `${value}` syntax.
 
 
-```
+```js
 const table = parameterizedTableTag`
 first | second | expected
 ${1}  | ${2}   | ${3}
