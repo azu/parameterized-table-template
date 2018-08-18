@@ -1,6 +1,6 @@
 # parameterized-table-template
 
-A helper library for Parameterized testing with Markdown table.
+A helper library for Parameterized testing with Markdown-like table.
 
 This is inspired by [jest-each](https://github.com/facebook/jest/tree/ebaf93481e68b4a149dedc0684792a51ef1c5ab7/packages/jest-each).
 
