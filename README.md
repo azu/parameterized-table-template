@@ -67,10 +67,10 @@ It return array of object that is defined in table.
 
 ```js
 const table = parameterizedTableTag`
-first | second | expected
-${1}  | ${2}   | ${3}
-${2}  | ${1}   | ${3}
-${2}  | ${2}   | ${4}
+    first | second | expected
+    ${1}  | ${2}   | ${3}
+    ${2}  | ${1}   | ${3}
+    ${2}  | ${2}   | ${4}
 `;
 /*
 [
