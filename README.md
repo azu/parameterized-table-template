@@ -19,7 +19,7 @@ import { parameterizedTableTag } from "parameterized-table-template";
 describe("example", () => {
     describe("sum tests", () => {
         // function for testing
-        const sum = (x: number, y: number) => x + y;
+        const sum = (x, y) => x + y;
         // generate tests
         parameterizedTableTag`
             first | second | expected
