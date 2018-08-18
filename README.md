@@ -48,7 +48,8 @@ parameterizedTableTag<{ first: number, second: number, expected: number }>`
     it(`${first} + ${second} = ${expected}`, () => {
         assert.strictEqual(sum(first, second), expected);
     });
-});```
+});
+```
 
 
 ## API 
