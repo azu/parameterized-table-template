@@ -1,6 +1,6 @@
 {
   "name": "parameterized-table-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tag function for Parameterized testing with Markdown table.",
   "keywords": [
     "Parameterized",
