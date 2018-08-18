@@ -1,0 +1,66 @@
+{
+  "name": "parameterized-table-template",
+  "version": "1.0.0",
+  "description": "A helper library for Parameterized testing with Markdown table.",
+  "keywords": [
+    "Parameterized",
+    "each",
+    "jest",
+    "test"
+  ],
+  "homepage": "https://github.com/azu/parameterized-table-template",
+  "bugs": {
+    "url": "https://github.com/azu/parameterized-table-template/issues"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/parameterized-table-template.js",
+  "types": "lib/parameterized-table-template.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/parameterized-table-template.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsc -p .",
+    "clean": "rimraf lib/",
+    "precommit": "lint-staged",
+    "postcommit": "git reset",
+    "prepublish": "npm run --if-present build",
+    "test": "mocha \"test/**/*.ts\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+    "watch": "tsc -p . --watch"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": false,
+    "tabWidth": 4
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.7.1",
+    "cross-env": "^5.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "ts-node-test-register": "^4.0.0",
+    "typescript": "^3.0.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
