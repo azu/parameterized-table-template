@@ -23,8 +23,20 @@ const buildTable = (data: Array<any>, rowSize: number, keys: Array<string>): Arr
             }, {});
         });
 };
-
-export const parameterizedTableTag = <T extends {}>(
+/**
+ * `parameterizedTableTag` takes a tagged template string with:
+ * - First row of variable name column headings separated with `|`
+ * - One or more subsequent rows of data supplied as template literal expressions using `${value}` syntax.
+ *
+ * @example
+ * parameterizedTableTag`
+ *   first | second | expected
+ *   ${1}  | ${2}   | ${3}
+ *   ${2}  | ${1}   | ${3}
+ *   ${2}  | ${2}   | ${4}
+ * `
+ */
+export const parameterizedTableTag = <T extends object>(
     literals: TemplateStringsArray,
     ...placeholders: any[]
 ): Array<T> => {
