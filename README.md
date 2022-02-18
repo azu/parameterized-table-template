@@ -1,4 +1,4 @@
-# parameterized-table-template [![Build Status](https://travis-ci.org/azu/parameterized-table-template.svg?branch=master)](https://travis-ci.org/azu/parameterized-table-template)
+# parameterized-table-template [![Actions Status: test](https://github.com/azu/parameterized-table-template/workflows/test/badge.svg)](https://github.com/azu/parameterized-table-template/actions?query=workflow%3A"test")
 
 This library provide  [Tag functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates) for Parameterized testing with Markdown-like table.
 
