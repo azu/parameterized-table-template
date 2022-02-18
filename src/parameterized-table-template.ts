@@ -14,7 +14,7 @@ const buildTable = (data: Array<any>, rowSize: number, keys: Array<string>): Arr
     const arraySize = data.length / rowSize;
     return createFilledArray(arraySize, 0)
         .map((_, index) => data.slice(index * rowSize, index * rowSize + rowSize))
-        .map(row => {
+        .map((row) => {
             return row.reduce((acc, value, index) => {
                 return {
                     ...acc,
