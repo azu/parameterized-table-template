@@ -102,7 +102,7 @@ See [Releases page](https://github.com/azu/parameterized-table-template/releases
 
 Install devDependencies and Run `npm test`:
 
-    npm i -d && npm test
+    npm test
 
 ## Contributing
 
